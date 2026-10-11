@@ -1,3 +1,5 @@
+TRY LANG
+
 # Weather Window
 
 Weather Window is a responsive weather forecast site built with React, TypeScript, and Vite. It uses Open-Meteo for live worldwide forecasts and location search, so local development needs no API key.
