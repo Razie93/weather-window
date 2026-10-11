@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-12T01:02:44+08:00",
+  "title": "Design System: Weather Window",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Signal Coral",
+        "canonical": "#df664b",
+        "tonalRamp": ["#41150c", "#6c2313", "#98321b", "#c34023", "#dc593c", "#e47e67", "#f0b5a8", "#fbede9"]
+      },
+      "signal-soft": {
+        "role": "primary-container",
+        "displayName": "Signal Wash",
+        "canonical": "rgba(223, 102, 75, 0.18)",
+        "tonalRamp": ["#41150c", "#6c2313", "#98321b", "#c34023", "#dc593c", "#e47e67", "#f0b5a8", "#fbede9"]
+      },
+      "water": {
+        "role": "secondary",
+        "displayName": "Gauge Teal",
+        "canonical": "#167e91",
+        "tonalRamp": ["#0a3a42", "#11606f", "#18879b", "#1eadc7", "#38c7e1", "#64d3e7", "#a6e6f2", "#e9f9fc"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Atmospheric Surface",
+        "canonical": "#eaf0ee",
+        "tonalRamp": ["#202d28", "#354a43", "#4a685e", "#608679", "#799f93", "#97b5ab", "#c4d4cf", "#f0f4f3"]
+      },
+      "surface-strong": {
+        "role": "neutral",
+        "displayName": "Instrument Paper",
+        "canonical": "#f5f7f4",
+        "tonalRamp": ["#242c20", "#3c4a36", "#55674b", "#6d8561", "#869e7a", "#a1b498", "#c9d4c4", "#f2f4f0"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Deep Weather Ink",
+        "canonical": "#14262e",
+        "tonalRamp": ["#172c35", "#274959", "#36677c", "#4684a0", "#5f9eb9", "#83b3c9", "#b8d4e0", "#edf4f7"]
+      },
+      "muted": {
+        "role": "neutral-variant",
+        "displayName": "Instrument Muted",
+        "canonical": "#53686f",
+        "tonalRamp": ["#21292c", "#374449", "#4c6066", "#627b83", "#7c959d", "#99acb3", "#c5d0d3", "#f0f3f4"]
+      },
+      "line": {
+        "role": "outline-variant",
+        "displayName": "Hairline Rule",
+        "canonical": "rgba(20, 38, 46, 0.18)",
+        "tonalRamp": ["#172c35", "#274959", "#36677c", "#4684a0", "#5f9eb9", "#83b3c9", "#b8d4e0", "#edf4f7"]
+      },
+      "line-strong": {
+        "role": "outline",
+        "displayName": "Strong Rule",
+        "canonical": "rgba(20, 38, 46, 0.38)",
+        "tonalRamp": ["#172c35", "#274959", "#36677c", "#4684a0", "#5f9eb9", "#83b3c9", "#b8d4e0", "#edf4f7"]
+      },
+      "atmosphere-a": {
+        "role": "tertiary",
+        "displayName": "Cool Atmosphere",
+        "canonical": "#bdd9dd",
+        "tonalRamp": ["#1a2f32", "#2b4f54", "#3d6f76", "#4e8e97", "#68a8b1", "#89bbc2", "#bcd8dc", "#eef5f6"]
+      },
+      "atmosphere-b": {
+        "role": "tertiary",
+        "displayName": "Warm Atmosphere",
+        "canonical": "#e9c58b",
+        "tonalRamp": ["#402c0c", "#6b4a14", "#96671c", "#c18525", "#da9f3e", "#e3b469", "#efd4a9", "#fbf4ea"]
+      },
+      "field": {
+        "role": "surface-variant",
+        "displayName": "Field Wash",
+        "canonical": "rgba(255, 255, 255, 0.34)",
+        "tonalRamp": ["#262626", "#404040", "#595959", "#737373", "#8c8c8c", "#a6a6a6", "#cccccc", "#f2f2f2"]
+      },
+      "focus": {
+        "role": "focus",
+        "displayName": "Focus Signal",
+        "canonical": "#f06449",
+        "tonalRamp": ["#471006", "#761b0a", "#a5260e", "#d43111", "#ee4a2b", "#f1735a", "#f7afa1", "#fdebe7"]
+      },
+      "selection": {
+        "role": "selection",
+        "displayName": "Selection Teal",
+        "canonical": "#145f6b",
+        "tonalRamp": ["#0c3940", "#145f6b", "#1c8696", "#24acc1", "#3ec5db", "#69d2e3", "#a9e5ef", "#eaf9fb"]
+      },
+      "selection-text": {
+        "role": "on-selection",
+        "displayName": "Selection Paper",
+        "canonical": "#f7fbfa",
+        "tonalRamp": ["#1a332d", "#2b554a", "#3c7768", "#4d9986", "#66b29f", "#88c3b5", "#bbddd4", "#eef6f4"]
+      }
+    },
+    "typographyMeta": {
+      "location-display": { "displayName": "Location Display", "purpose": "Primary place name in the current-conditions register.", "responsiveFontSize": "clamp(2.3rem, 4.2vw, 4.8rem)", "mobileFontSize": "clamp(2.5rem, 13vw, 4rem)" },
+      "temperature-display": { "displayName": "Temperature Display", "purpose": "Dominant live temperature reading with stable tabular numerals.", "responsiveFontSize": "clamp(6.2rem, 8.6vw, 9.4rem)", "mobileFontSize": "clamp(6.5rem, 31vw, 9rem)" },
+      "section-headline": { "displayName": "Section Headline", "purpose": "Hourly and seven-day forecast region headings.", "responsiveFontSize": "clamp(1.7rem, 3vw, 2.65rem)" },
+      "body": { "displayName": "Body", "purpose": "Conditions, descriptions, controls, and recovery copy." },
+      "data-label": { "displayName": "Data Label", "purpose": "Times, timezones, percentages, chart values, and measurements." },
+      "brand": { "displayName": "Brand", "purpose": "Compact Weather Window masthead wordmark." }
+    },
+    "conditionThemes": {
+      "clear-day": {
+        "surface": "#eaf0ee", "surfaceStrong": "#f5f7f4", "ink": "#14262e", "muted": "#53686f", "line": "rgba(20, 38, 46, 0.18)", "lineStrong": "rgba(20, 38, 46, 0.38)", "signal": "#df664b", "signalSoft": "rgba(223, 102, 75, 0.18)", "water": "#167e91", "atmosphereA": "#bdd9dd", "atmosphereB": "#e9c58b", "field": "rgba(255, 255, 255, 0.34)"
+      },
+      "clear-night": {
+        "surface": "#101c2b", "surfaceStrong": "#16273a", "ink": "#edf4f2", "muted": "#a9bcc2", "line": "rgba(237, 244, 242, 0.17)", "lineStrong": "rgba(237, 244, 242, 0.38)", "signal": "#ffbd65", "signalSoft": "rgba(255, 189, 101, 0.15)", "water": "#74c5d9", "atmosphereA": "#263d62", "atmosphereB": "#3c315f", "field": "rgba(255, 255, 255, 0.035)"
+      },
+      "cloud": {
+        "surface": "#dce4e2", "surfaceStrong": "#f1f3ef", "ink": "#14262e", "muted": "#58686a", "line": "rgba(20, 38, 46, 0.18)", "lineStrong": "rgba(20, 38, 46, 0.38)", "signal": "#b55742", "signalSoft": "rgba(181, 87, 66, 0.16)", "water": "#4e7f87", "atmosphereA": "#bbc6c5", "atmosphereB": "#d9d2bd", "field": "rgba(255, 255, 255, 0.34)"
+      },
+      "fog": {
+        "surface": "#dce4e2", "surfaceStrong": "#f1f3ef", "ink": "#14262e", "muted": "#58686a", "line": "rgba(20, 38, 46, 0.18)", "lineStrong": "rgba(20, 38, 46, 0.38)", "signal": "#b55742", "signalSoft": "rgba(181, 87, 66, 0.16)", "water": "#4e7f87", "atmosphereA": "#bbc6c5", "atmosphereB": "#d9d2bd", "field": "rgba(255, 255, 255, 0.34)"
+      },
+      "rain": {
+        "surface": "#cddadd", "surfaceStrong": "#e8eeec", "ink": "#102b35", "muted": "#47636c", "line": "rgba(20, 38, 46, 0.18)", "lineStrong": "rgba(20, 38, 46, 0.38)", "signal": "#d85d43", "signalSoft": "rgba(216, 93, 67, 0.15)", "water": "#086e87", "atmosphereA": "#8eb5c1", "atmosphereB": "#b9a994", "field": "rgba(255, 255, 255, 0.34)"
+      },
+      "storm": {
+        "surface": "#cddadd", "surfaceStrong": "#e8eeec", "ink": "#102b35", "muted": "#47636c", "line": "rgba(20, 38, 46, 0.18)", "lineStrong": "rgba(20, 38, 46, 0.38)", "signal": "#d85d43", "signalSoft": "rgba(216, 93, 67, 0.15)", "water": "#086e87", "atmosphereA": "#8eb5c1", "atmosphereB": "#b9a994", "field": "rgba(255, 255, 255, 0.34)"
+      },
+      "snow": {
+        "surface": "#ecf1ef", "surfaceStrong": "#fbfcf8", "ink": "#19313a", "muted": "#597078", "line": "rgba(20, 38, 46, 0.18)", "lineStrong": "rgba(20, 38, 46, 0.38)", "signal": "#d85e4a", "signalSoft": "rgba(216, 94, 74, 0.14)", "water": "#3b8799", "atmosphereA": "#d0e6ea", "atmosphereB": "#dae1df", "field": "rgba(255, 255, 255, 0.34)"
+      }
+    },
+    "shadows": [
+      { "name": "atmospheric-bloom", "value": "0 4rem 10rem color-mix(in srgb, var(--atmosphere-a) 42%, transparent)", "purpose": "Environmental bloom behind the large atmospheric disc." },
+      { "name": "search-overlay", "value": "0 18px 48px rgba(19, 41, 49, 0.19)", "purpose": "Elevates the location results menu above the continuous field." },
+      { "name": "condition-glyph", "value": "drop-shadow(0 12px 18px color-mix(in srgb, var(--ink) 13%, transparent))", "purpose": "Separates the central weather glyph from its orbital field." }
+    ],
+    "motion": [
+      { "name": "theme-change", "value": "350ms ease", "purpose": "Color and background changes when the weather theme changes." },
+      { "name": "control-press", "value": "transform 130ms ease", "purpose": "Immediate 0.97 scale feedback on tactile controls." },
+      { "name": "control-state", "value": "160ms ease", "purpose": "Color, background, and border state changes." },
+      { "name": "daily-row", "value": "180ms ease", "purpose": "Fine-pointer hover inset and field wash." },
+      { "name": "atmosphere-breathe", "value": "14s ease-in-out infinite alternate", "purpose": "Slow ambient scale and translation of the background disc." },
+      { "name": "orbit-outer", "value": "32s linear infinite", "purpose": "Outer condition orbit rotation." },
+      { "name": "orbit-inner", "value": "22s linear infinite reverse", "purpose": "Counter-rotation of the dashed inner orbit." },
+      { "name": "search-spin", "value": "650ms linear infinite", "purpose": "Search progress indicator." },
+      { "name": "loading-scan", "value": "1.35s ease-in-out infinite", "purpose": "Loading placeholder scan." },
+      { "name": "reduced-motion", "value": "0.01ms; 1 iteration", "purpose": "Collapses all animations and transitions and disables smooth scrolling under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "stack", "value": "1040px", "purpose": "Stacks the first forecast viewport and moves search to the header's second row." },
+      { "name": "mobile", "value": "760px", "purpose": "Switches to mobile gutters, icon-only geolocation, scrolling trace, and two-column daily rows." },
+      { "name": "compact-mobile", "value": "420px", "purpose": "Tightens unit control and daily labels." },
+      { "name": "minimum", "value": "320px", "purpose": "Minimum supported document width." }
+    ],
+    "shapeExtensions": {
+      "circle": "50%",
+      "purpose": "Atmospheric discs, condition orbits, trace points, spinners, and the orbital signal bead."
+    },
+    "interaction": {
+      "focusVisible": "3px solid #f06449 with 3px offset; search focus-within uses an ink border and a 3px signal-tinted ring.",
+      "pointer": "Hourly SVG pointer movement selects the nearest hour; the transparent native range input provides keyboard and assistive interaction.",
+      "press": "Location, unit, recovery, and search-result controls scale to 0.97.",
+      "hover": "Hover treatments are restricted to hover-capable fine pointers.",
+      "searchKeyboard": "Enter chooses the first result and Escape closes the list."
+    },
+    "accessibility": {
+      "liveRegions": ["Hourly readout uses aria-live=polite.", "Notices and retained-forecast errors use status roles.", "Blocking forecast failure uses role=alert."],
+      "semantics": ["Search input is an expanded-state combobox controlling a listbox.", "The hourly chart has an accessible title and description.", "Temperature unit buttons expose aria-pressed.", "Decorative atmosphere and non-informative icons are hidden from assistive technology."],
+      "motion": "prefers-reduced-motion disables smooth scrolling and collapses animations and transitions.",
+      "screenReaderUtility": "A reusable visually hidden class preserves labels and loading text."
+    }
+  },
+  "components": [
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "The 46px city search instrument with leading icon, clear action, and visible focus-within state.",
+      "html": "<label class=\"ds-search\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"></circle><path d=\"m20 20-3.5-3.5\"></path></svg><input aria-label=\"Search for a city or place\" placeholder=\"Search a city\"><button type=\"button\" aria-label=\"Clear search\">×</button></label>",
+      "css": ".ds-search{display:flex;height:46px;align-items:center;gap:10px;padding:0 12px;border:1px solid rgba(20,38,46,.38);border-radius:12px;background:rgba(245,247,244,.82);color:#14262e;font-family:'Spline Sans Variable',sans-serif}.ds-search:focus-within{border-color:#14262e;box-shadow:0 0 0 3px rgba(223,102,75,.22)}.ds-search svg{width:18px;fill:none;stroke:currentColor;stroke-width:1.8}.ds-search input{min-width:0;flex:1;border:0;outline:0;background:transparent;color:inherit;font:inherit}.ds-search input::placeholder{color:#53686f}.ds-search button{display:grid;width:28px;height:28px;place-items:center;border:0;border-radius:8px;background:transparent;color:inherit;font:inherit;cursor:pointer}.ds-search button:hover{background:rgba(223,102,75,.18)}.ds-search button:focus-visible{outline:3px solid #f06449;outline-offset:3px}"
+    },
+    {
+      "name": "Location Button",
+      "kind": "button",
+      "description": "A bordered geolocation instrument that becomes icon-only on mobile.",
+      "html": "<button class=\"ds-location\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"3\"></circle><path d=\"M12 2v3M12 19v3M2 12h3M19 12h3\"></path><circle cx=\"12\" cy=\"12\" r=\"8\"></circle></svg><span>Use my location</span></button>",
+      "css": ".ds-location{display:inline-flex;height:46px;align-items:center;gap:8px;padding:0 15px;border:1px solid rgba(20,38,46,.18);border-radius:12px;background:transparent;color:#14262e;font:400 1rem 'Spline Sans Variable',sans-serif;cursor:pointer;transition:transform 130ms ease,background-color 160ms ease,border-color 160ms ease}.ds-location svg{width:18px;fill:none;stroke:currentColor;stroke-width:1.8}.ds-location:hover{border-color:rgba(20,38,46,.38);background:rgba(255,255,255,.34)}.ds-location:active{transform:scale(.97)}.ds-location:focus-visible{outline:3px solid #f06449;outline-offset:3px}.ds-location:disabled{cursor:wait;opacity:.55}"
+    },
+    {
+      "name": "Temperature Unit Switch",
+      "kind": "button",
+      "refersTo": "unit-segment-active",
+      "description": "A compact two-segment Celsius/Fahrenheit control with an ink-filled active state.",
+      "html": "<div class=\"ds-unit\" aria-label=\"Temperature unit\"><button class=\"is-active\" aria-pressed=\"true\">°C</button><button aria-pressed=\"false\">°F</button></div>",
+      "css": ".ds-unit{display:grid;grid-template-columns:1fr 1fr;width:94px;padding:3px;border:1px solid rgba(20,38,46,.38);border-radius:12px;font-family:'Spline Sans Variable',sans-serif}.ds-unit button{min-height:36px;border:0;border-radius:8px;background:transparent;color:#53686f;font:inherit;cursor:pointer;transition:transform 130ms ease,color 160ms ease,background-color 160ms ease}.ds-unit button.is-active{background:#14262e;color:#f5f7f4}.ds-unit button:active{transform:scale(.97)}.ds-unit button:focus-visible{outline:3px solid #f06449;outline-offset:3px}"
+    },
+    {
+      "name": "Primary Recovery Button",
+      "kind": "button",
+      "refersTo": "primary-button",
+      "description": "The high-emphasis retry action used in the blocking forecast error state.",
+      "html": "<button class=\"ds-primary\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M20 11a8 8 0 1 0-2.3 5.7\"></path><path d=\"M20 4v7h-7\"></path></svg>Try again</button>",
+      "css": ".ds-primary{display:inline-flex;min-height:44px;align-items:center;gap:8px;padding:0 16px;border:0;border-radius:12px;background:#14262e;color:#f5f7f4;font:400 1rem 'Spline Sans Variable',sans-serif;cursor:pointer;transition:transform 130ms ease}.ds-primary svg{width:17px;fill:none;stroke:currentColor;stroke-width:2}.ds-primary:active{transform:scale(.97)}.ds-primary:focus-visible{outline:3px solid #f06449;outline-offset:3px}"
+    },
+    {
+      "name": "Notice Banner",
+      "kind": "card",
+      "refersTo": "notice-banner",
+      "description": "A recoverable status band for denied geolocation and retained-forecast errors.",
+      "html": "<div class=\"ds-notice\" role=\"status\"><span>Location access was denied. Search for a place instead.</span><button type=\"button\">Dismiss</button></div>",
+      "css": ".ds-notice{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:12px 14px;border:1px solid rgba(20,38,46,.38);border-radius:12px;background:rgba(245,247,244,.88);color:#14262e;font:400 1rem 'Spline Sans Variable',sans-serif}.ds-notice button{padding:5px 8px;border:0;background:transparent;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:4px;cursor:pointer}.ds-notice button:focus-visible{outline:3px solid #f06449;outline-offset:3px}"
+    },
+    {
+      "name": "Search Result Row",
+      "kind": "nav",
+      "description": "A two-line location option with a bold place name and muted administrative detail.",
+      "html": "<button class=\"ds-result\" type=\"button\" role=\"option\" aria-selected=\"false\"><span>Manila</span><small>Metro Manila, Philippines</small></button>",
+      "css": ".ds-result{display:grid;width:100%;gap:2px;padding:11px 12px;text-align:left;border:0;border-radius:9px;background:transparent;color:#14262e;font:400 1rem 'Spline Sans Variable',sans-serif;cursor:pointer;transition:transform 130ms ease}.ds-result span{font-weight:650}.ds-result small{color:#53686f}.ds-result:hover{background:rgba(255,255,255,.34)}.ds-result:active{transform:scale(.97)}.ds-result:focus-visible{outline:3px solid #f06449;outline-offset:3px}"
+    },
+    {
+      "name": "Hourly Trace",
+      "kind": "custom",
+      "description": "The signature strip-recorder chart combining a signal temperature trace, precipitation bars, ruled ticks, and a selected reading line.",
+      "html": "<div class=\"ds-trace\"><div class=\"ds-readout\"><span>1:00 AM</span><strong>25°C</strong><span>11% rain</span></div><svg viewBox=\"0 0 420 150\" role=\"img\" aria-label=\"Hourly temperature and precipitation probability\"><g class=\"ticks\"><path d=\"M24 18v110M74 18v110M124 18v110M174 18v110M224 18v110M274 18v110M324 18v110M374 18v110\"></path></g><g class=\"bars\"><path d=\"M71 120v-8M121 120v-14M171 120v-22M221 120v-38M271 120v-48M321 120v-28M371 120v-18\"></path></g><path class=\"area\" d=\"M24 102L74 101L124 104L174 88L224 48L274 34L324 62L374 72L374 120L24 120Z\"></path><path class=\"line\" d=\"M24 102L74 101L124 104L174 88L224 48L274 34L324 62L374 72\"></path><path class=\"reading\" d=\"M224 10v118\"></path><circle cx=\"224\" cy=\"48\" r=\"6\"></circle></svg></div>",
+      "css": ".ds-trace{padding-top:8px;border-top:1px solid rgba(20,38,46,.18);border-bottom:1px solid rgba(20,38,46,.18);color:#14262e}.ds-readout{display:flex;gap:10px;align-items:center;margin-bottom:8px;font:400 .78rem 'Azeret Mono Variable',monospace}.ds-readout strong{color:#df664b;font-size:1.35rem;font-weight:560}.ds-trace svg{display:block;width:100%;min-width:420px}.ds-trace .ticks path{fill:none;stroke:rgba(20,38,46,.18);stroke-width:1}.ds-trace .bars path{fill:none;stroke:#167e91;stroke-width:6;stroke-linecap:round;opacity:.65}.ds-trace .area{fill:rgba(223,102,75,.18)}.ds-trace .line{fill:none;stroke:#df664b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.ds-trace .reading{fill:none;stroke:#14262e;stroke-width:1.5;stroke-dasharray:4 7;opacity:.6}.ds-trace circle{fill:#df664b;stroke:#f5f7f4;stroke-width:4}"
+    },
+    {
+      "name": "Daily Forecast Row",
+      "kind": "custom",
+      "description": "A ruled ledger row aligning day, condition, precipitation probability, and high/low temperature.",
+      "html": "<article class=\"ds-day\"><div class=\"ds-date\"><strong>Today</strong><span>Oct 12</span></div><div class=\"ds-condition\">Thunderstorm</div><div class=\"ds-rain\">100%</div><div class=\"ds-temp\"><strong>30°</strong><span>25°</span></div></article>",
+      "css": ".ds-day{display:grid;grid-template-columns:1.15fr 1.55fr .7fr .55fr;gap:24px;align-items:center;min-height:82px;border-bottom:1px solid rgba(20,38,46,.18);color:#14262e;font:400 1rem 'Spline Sans Variable',sans-serif;transition:padding 180ms ease,background-color 180ms ease}.ds-date,.ds-temp{display:flex;align-items:center}.ds-date{gap:16px}.ds-date strong{min-width:88px}.ds-date span,.ds-condition,.ds-rain,.ds-temp span{color:#53686f}.ds-rain,.ds-temp{font-family:'Azeret Mono Variable',monospace;font-variant-numeric:tabular-nums}.ds-temp{justify-content:end;gap:16px}.ds-temp strong{font-size:1.25rem}.ds-day:hover{padding-inline:14px;background:rgba(255,255,255,.34)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Atmospheric Strip Recorder",
+    "overview": "Weather Window translates a contemporary meteorological recorder into a responsive web instrument. A pale atmospheric field carries deep ink type, ruled divisions, calibrated data marks, and one warm condition-led signal. The interface is calm and operational rather than decorative: current conditions form a strong register, the next 24 hours run as a continuous trace, and the week reads as an indexed ledger.\n\nThe visual world changes with the weather without changing its information architecture. Surface, ink, signal, water, and atmospheric colors shift through seven condition classes while typography, geometry, hierarchy, and interaction stay stable. Controls are compact and tactile, numeric data is precisely aligned, and depth is reserved for overlays and atmospheric emphasis rather than a field of floating cards.",
+    "keyCharacteristics": [
+      "Pale, condition-responsive atmospheric fields with deep, high-contrast ink.",
+      "An oversized vertical current register anchored by mono weather numerals.",
+      "A continuous hourly strip trace with ruled ticks, rain bars, and a movable reading line.",
+      "Seven-day forecasts organized as full-width indexed rows instead of cards.",
+      "Compact instrument controls with visible focus and immediate press feedback."
+    ],
+    "rules": [
+      { "name": "The One Signal Rule", "body": "Use one condition-led signal color for the trace and selected or emphasized instrument details; do not scatter unrelated accents across the forecast.", "section": "colors" },
+      { "name": "The Numeric Instrument Rule", "body": "Temperatures, times, percentages, and measured values use Azeret Mono with tabular numerals; descriptive weather language stays in Spline Sans.", "section": "typography" },
+      { "name": "The Flat Field Rule", "body": "Forecast regions stay on one continuous field and are separated with rules, spacing, and tone; do not turn them into a grid of floating glass cards.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do preserve the continuous ruled forecast field and use spacing, lines, and alignment before adding containers.",
+      "Do let weather conditions remap the existing semantic color roles while keeping hierarchy and interactions stable.",
+      "Do use Spline Sans for language and Azeret Mono with tabular numerals for measured data.",
+      "Do keep keyboard focus visible, expose live data changes politely, and retain the native range input over the hourly trace.",
+      "Do limit hover treatments to devices that report a fine pointer and stop or collapse motion for reduced-motion users."
+    ],
+    "donts": [
+      "Don't replace the current register, hourly trace, or daily ledger with interchangeable glass cards.",
+      "Don't introduce extra accent colors when the active signal and water roles already encode emphasis and precipitation.",
+      "Don't compress the hourly trace into an unreadable mobile sparkline; preserve its width and allow horizontal scrolling.",
+      "Don't use mono typography for descriptive conditions or long-form interface copy.",
+      "Don't add decorative motion that competes with reading the forecast or survives the reduced-motion override."
+    ]
+  }
+}

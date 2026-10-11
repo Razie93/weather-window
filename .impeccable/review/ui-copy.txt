@@ -1,0 +1,19 @@
+Weather Window
+Search a city
+Use my location
+Feels like
+Wind
+Humidity
+Forecast unavailable
+The forecast could not be loaded.
+Try again
+This browser does not provide location access. Search for a place instead.
+Location access was denied. Search for a place instead.
+Your location could not be determined. Try searching for a place.
+Next 24 hours
+Drag across the trace or use the slider to inspect each hour.
+Later hours continue to the right.
+Seven-day outlook
+Daily range and highest chance of rain.
+Forecast data from Open-Meteo.
+Data source
